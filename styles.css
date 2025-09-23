@@ -1,0 +1,81 @@
+/*CORES PADRÃO*/
+:root {
+    --max-width: 1500px;
+    --font-color: #FF69B4;
+    --bg-color: #fff;
+    --btn-color: #8B008B;
+    --font-color2: #000;
+}
+/*CONFIGURAÇÕES INICIAIS DA APLICAÇÃO*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.4;
+    background-color: var(--bg-color);
+    padding-top: 50px;
+}
+/*ESTILIZANDO O CABEÇALHO*/
+header {
+    display: flex;
+    justify-content: space-between;
+    max-width: var(--max-width);
+}
+
+.box-icons {
+    display: flex;
+    gap: 12px;
+    margin-left: 150px;
+}
+
+.location {
+    height: 35px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.location:hover {
+    background: var(--font-color);
+    border-radius: 20px;
+}
+
+.phone {
+    height: 35px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.phone:hover {
+    background: var(--font-color);
+    border-radius: 20px;
+}
+
+h1 {
+    color: var(--font-color);
+    font-size: 1.9em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 13px;
+    margin-top: 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--font-color2);
+    transition: 0.3s;
+}
+
+a:hover {
+    color: var(--font-color);
+}
+
+.milkshake {
+    max-width: 100%;
+}

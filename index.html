@@ -3,12 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>MilkCream</title>
   </head>
   <body>
+    <!--CABEÇALHO DO SITE-->
     <header>
-      <img src="./img/location-1.png" alt="localização" />
-      <img src="./img/phone.png" alt="telefone" />
+      <div class="box-icons">
+        <a href=""><img src="./img/location-1.png" class="location" alt="localização" /></a>
+        <a href=""><img src="./img/phone.png" class="phone" alt="telefone" /></a>
+      </div>
 
       <h1>MilkCream</h1>
 
@@ -19,16 +29,20 @@
           </li>
 
           <li>
-            <a href="">Mais</a>
+            <a href="">Destaques</a>
           </li>
 
           <li>
-            <a href="">Sobre</a>
+            <a href="">Mais</a>
+          </li>
+
+           <li>
+            <a href="">Playground</a>
           </li>
         </ul>
       </nav>
     </header>
-
+    <!--CONTEÚDO PRINCIPAL-->
     <main class="main container">
       <h2>Seja Bem vindo!</h2>
 
@@ -41,9 +55,9 @@
         harum, sed eos rerum, ratione quasi ea!
       </p>
 
-      <img src="./img/img-1.png" alt="imagem-sorvete" />
+      <img src="./img/img-1.png" class="milkshake" alt="imagem-sorvete" />
     </main>
-
+    <!--SECTION 1 -> SABORES DOS MILKSHAKES-->
     <section class="presentation container">
       <h3>Sabores</h3>
 
@@ -71,6 +85,33 @@
         <img src="" alt="" />
         <h3>Vanilla</h3>
       </article>
+    </section>
+    <!--SECTION 2 -> AÇAÍ ENTREGAS-->
+    <section class="acai container">
+      <h3>Temos Açaí Também! Peça já o seu!</h3>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+        assumenda quibusdam aperiam explicabo nihil? Doloremque, voluptatem
+        accusantium. Sint praesentium, incidunt quae unde quis in, eius numquam
+        sequi beatae asperiores aliquam iure voluptas magnam, repellat earum
+        fugiat dolore cupiditate! Aliquam accusamus deserunt exercitationem. In
+        non aperiam, qui eligendi provident minima consequuntur.
+      </p>
+
+      <img src="./img/img-3.png" alt="imagem-açaí" />
+      <button>Pedir</button>
+    </section>
+    <!-- SECTION 3 -> PLAYGROUND CONTAINER-->
+    <section class="playground container">
+      <img src="./img/play-img.jpg" alt="" />
+      <h2>Traga seu filho pro nosso Playground!</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus esse
+        voluptates ipsa, ullam ut dolor tempora odit suscipit sunt laudantium
+        deserunt, maxime, magnam placeat quaerat soluta! Natus quis adipisci
+        pariatur.
+      </p>
     </section>
   </body>
 </html>
