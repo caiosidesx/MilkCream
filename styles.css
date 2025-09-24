@@ -70,6 +70,8 @@ li a {
     text-decoration: none;
     color: var(--font-color2);
     transition: 0.3s;
+    font-weight: bold;
+    margin-right: 20px;
 }
 
 a:hover {
@@ -77,22 +79,50 @@ a:hover {
 }
 /*ESTILIZANDO O CONTEÚDO PRINCIPAL (MAIN)*/
 .container {
-    max-width: 1100px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
 .container .main-content {
     display: flex;
     align-items: center;
-    margin: 80px;
+    margin: 85px;
 }
 
 .welcome {
     position: absolute;
     margin-bottom: 200px;
+    color: var(--font-color);
 }
 
 .milkshake {
     height: 500px;
-    
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/*ESTILIZANDO A SECTION 1*/
+.presentation {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 120px 20px;
+    position: relative;
+}
+
+.flavor-title {
+    color: var(--font-color);
+    grid-column: -1 / 1;
+    text-align: center;
 }
