@@ -126,11 +126,37 @@ a:hover {
     grid-column: -1 / 1;
     text-align: center;
 }
+
+.flavors-cards {
+    display: grid;
+    border: 2px solid var(--font-color);
+    border-radius: 10px;
+    padding: 6rem;
+    position: relative;
+    overflow: hidden;
+    margin: 1.9rem 1.9rem 1.9rem;
+    text-align: center;
+}
+
+.shakes {
+    height: 145px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+.shakes:hover {
+    transform: translateY(-25px);
+}
+
+h3 {
+    margin-top: 50px;
+    color: var(--font-color);
+}
 /*ESTILIZANDO A SECTION 2*/
 .acai .box-acai {
     display: flex;
     align-items: center;
-    margin: 85px;
+    margin-right: 100px;
 }
 
 .box-acai h3 {
@@ -164,6 +190,19 @@ button:hover {
 }
 
 /*ESTILIZANDO A SECTION 3 - PLAYGROUND*/
-.playground {
+.playground .box-play {
+    display: flex;
+    align-items: center;
+    margin: 210px;
+    gap: 35px;
+}
 
+.box-play .title-play {
+    position: absolute;
+    margin-bottom: 300px;
+    color: var(--font-color);
+}
+
+.play-img {
+    height: 290px;
 }
