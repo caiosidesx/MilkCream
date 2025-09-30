@@ -130,7 +130,7 @@ a:hover {
 .flavors-cards {
     display: grid;
     border: 2px solid var(--font-color);
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 6rem;
     position: relative;
     overflow: hidden;
@@ -156,12 +156,12 @@ h3 {
 .acai .box-acai {
     display: flex;
     align-items: center;
-    margin-right: 100px;
+    margin-left: 200px;
 }
 
 .box-acai h3 {
     position: absolute;
-    margin-bottom: 190px;
+    margin-bottom: 250px;
     color: var(--btn-color);
 }
 
