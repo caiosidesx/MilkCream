@@ -90,6 +90,15 @@ li a {
 a:hover {
     color: var(--font-color);
 }
+
+.botao-menu {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    display: none;
+}
+
 /*ESTILIZANDO O CONTEÚDO PRINCIPAL (MAIN)*/
 .container {
     max-width: 1300px;
@@ -196,7 +205,7 @@ h3 {
     height: 500px;
 }
 
-button {
+.ask {
     position: relative;
     margin-top: 370px;
     right: 300px;
@@ -211,7 +220,7 @@ button {
     font-family: "Montserrat", sans-serif;
 }
 
-button:hover {
+.ask:hover {
     background: var(--font-color);
     color: var(--btn-color);
 }
@@ -222,6 +231,18 @@ button:hover {
     align-items: center;
     margin: 210px;
     gap: 35px;
+    animation: slide-right 2s ease-in-out forwards;
+}
+
+@keyframes slide-right {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(20px);
+    }
 }
 
 .box-play .title-play {
@@ -232,4 +253,51 @@ button:hover {
 
 .play-img {
     height: 290px;
+}
+/*RESPONSIVIDADE - IPHONE 14 PRO MAX*/
+@media screen and (max-width: 430px){
+    header .box-icons {
+        position: relative;
+        margin: 10px;
+        transform: translateY(-25px);
+    }
+
+    h1 {
+       font-size: 1.5rem;
+    }
+
+    .botao-menu {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        flex-direction: column;
+        overflow: hidden;
+        transition: 0.3s ease-in-out;
+        max-height: 0;
+    }
+
+    .menu .ativo {
+        max-height: 200px;
+    }
+
+    .container .main-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 auto;
+    }
+
+    .welcome {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .milkshake {
+        margin-top: 50px;
+    }
 }
